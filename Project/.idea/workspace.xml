@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c0d7552-7aae-4ede-932d-6a373e46cdbe" name="Default Changelist" comment="1.1.2">
-      <change beforePath="$PROJECT_DIR$/../Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project/src/main/java/DAO/UserJdbcDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/src/main/java/DAO/UserJdbcDAO.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c0d7552-7aae-4ede-932d-6a373e46cdbe" name="Default Changelist" comment="1.1.3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +96,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1.2" />
+    <MESSAGE value="1.1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1.3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="703" y="319" key="#Assign_Data_Sources" timestamp="1589314513863">
