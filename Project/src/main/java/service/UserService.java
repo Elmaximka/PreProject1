@@ -1,5 +1,7 @@
 package service;
 
+import DAO.UserDAO;
+import DAO.UserHibernateDAO;
 import DAO.UserJdbcDAO;
 import model.User;
 
@@ -7,10 +9,10 @@ import java.util.List;
 
 public class UserService {
     private static UserService instance;
-    private static UserJdbcDAO userDao;
+    private static UserDAO userDao;
 
     private UserService() {
-        userDao = new UserJdbcDAO();
+        userDao = new UserHibernateDAO();
     }
 
     public static UserService instance() {
