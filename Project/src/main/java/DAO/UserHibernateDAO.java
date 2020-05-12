@@ -4,23 +4,16 @@ import model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
+
+import util.DBHelper;
 
 import java.util.List;
 
 public class UserHibernateDAO implements UserDAO {
     private static  SessionFactory sessionFactory;
-    public static SessionFactory getSessionFactory() {
-        if (sessionFactory == null) {
-            sessionFactory = createSessionFactory();
-        }
-        return sessionFactory;
-    }
 
     public UserHibernateDAO() {
-        sessionFactory = getSessionFactory();
+        sessionFactory = DBHelper.getSessionFactory();
     }
 
     @Override
@@ -92,26 +85,5 @@ public class UserHibernateDAO implements UserDAO {
         session.close();
     }
 
-    @SuppressWarnings("UnusedDeclaration")
-    private static Configuration getConfiguration() {
-        Configuration configuration = new Configuration();
-        configuration.addAnnotatedClass(User.class);
-
-        configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-        configuration.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
-        configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/crud");
-        configuration.setProperty("hibernate.connection.username", "root");
-        configuration.setProperty("hibernate.connection.password", "root");
-        configuration.setProperty("hibernate.show_sql", "true");
-        return configuration;
-    }
-
-    private static SessionFactory createSessionFactory() {
-        Configuration configuration = getConfiguration();
-        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder();
-        builder.applySettings(configuration.getProperties());
-        ServiceRegistry serviceRegistry = builder.build();
-        return configuration.buildSessionFactory(serviceRegistry);
-    }
 
 }

@@ -1,6 +1,7 @@
 package DAO;
 
 import model.User;
+import util.DBHelper;
 
 
 import java.sql.*;
@@ -11,7 +12,7 @@ public class UserJdbcDAO implements UserDAO {
     private final Connection connection;
 
     public UserJdbcDAO() {
-        connection = getConnection();
+        connection = DBHelper.getConnection();
     }
 
     public boolean deleteUser(String name) {
@@ -93,25 +94,5 @@ public class UserJdbcDAO implements UserDAO {
             e.printStackTrace();
         }
     }
-    public static Connection getConnection() {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
 
-            StringBuilder url = new StringBuilder();
-
-            url.
-                    append("jdbc:mysql://").        //db type
-                    append("localhost:").           //host name
-                    append("3306/").                //port
-                    append("crud?").                //db name
-                    append("useUnicode=true&").     //unicode
-                    append("serverTimezone=Europe/Moscow");  // setTimeZone
-
-            return DriverManager.getConnection(url.toString(), "root", "root");
-
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-            throw new IllegalStateException(e);
-        }
-    }
 }
