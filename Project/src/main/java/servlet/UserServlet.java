@@ -28,12 +28,13 @@ public class UserServlet extends HttpServlet {
         try {
             HttpSession session = req.getSession();
             User user = userService.getUserByName(req.getParameter("name"));
-            User userSession = (User) session.getAttribute("role");
-            if (!(userSession == null)) {
-                session.removeAttribute("role");
+            if(user.getPassword().equals(req.getParameter("password"))) {
+                User userSession = (User) session.getAttribute("role");
+                if (!(userSession == null)) {
+                    session.removeAttribute("role");
+                }
+                session.setAttribute("role", user.getRole());
             }
-            session.setAttribute("role", user);
-
             if (user.getRole().equalsIgnoreCase("admin") &&
                     user.getPassword().equals(req.getParameter("password"))) {
                 resp.sendRedirect("/admin.jsp");

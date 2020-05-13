@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c0d7552-7aae-4ede-932d-6a373e46cdbe" name="Default Changelist" comment="1.1.4">
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/servlet/TheFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/servlet/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/web/user/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/web/index.jsp" afterDir="false" />
+    <list default="true" id="7c0d7552-7aae-4ede-932d-6a373e46cdbe" name="Default Changelist" comment="1.1.5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/TheFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/TheFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -76,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1589311604574</updated>
       <workItem from="1589311607874" duration="1390000" />
-      <workItem from="1589313465985" duration="2286000" />
+      <workItem from="1589313465985" duration="2371000" />
+      <workItem from="1589375374978" duration="721000" />
     </task>
     <task id="LOCAL-00001" summary="1.1.2">
       <created>1589313770094</created>
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589315419913</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.1.5">
+      <created>1589315902346</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589315902346</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,12 +130,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.1.2" />
     <MESSAGE value="1.1.3" />
     <MESSAGE value="1.1.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1.4" />
+    <MESSAGE value="1.1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1.5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="703" y="319" key="#Assign_Data_Sources" timestamp="1589314513863">
@@ -150,9 +160,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="6" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1589311755099" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589315430394">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589315920221">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1589315430394" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1589315920221" />
   </component>
 </project>

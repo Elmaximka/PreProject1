@@ -1,5 +1,6 @@
 <%@ page import="com.google.gson.Gson" %>
-<%@ page import="model.User" %><%--
+<%@ page import="model.User" %>
+<%@ page import="service.UserService" %><%--
   Created by IntelliJ IDEA.
   User: Максим
   Date: 11.05.2020
@@ -12,7 +13,7 @@
     <title>User</title>
 </head>
 <body>
-<% User user = (User)session.getAttribute("role");%>
+<% User user = UserService.instance().getUserByName(request.getParameter("name"));%>
 <%! Gson gson = new Gson();%>
 <% response.getWriter().println(gson.toJson(user));%>
 </body>

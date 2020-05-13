@@ -24,11 +24,11 @@ public class TheFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-        User user = (User) ((HttpServletRequest) request).getSession().getAttribute("role");
+        String user = (String) ((HttpServletRequest) request).getSession().getAttribute("role");
         if(user == null){
             request.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
         }
-        if (user.getRole().equalsIgnoreCase("admin")) {
+        if (user.equalsIgnoreCase("admin")) {
             chain.doFilter(request, response);
         }else {
             request.getServletContext().getRequestDispatcher("/user").forward(request,response);
