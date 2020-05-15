@@ -49,6 +49,7 @@ public class AuthServlet extends HttpServlet {
             }
         } else {
             resp.getWriter().write("No such User registered");
+            session.setAttribute("role", null);
             resp.setStatus(404);
         }
     }
