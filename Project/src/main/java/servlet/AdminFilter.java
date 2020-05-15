@@ -7,8 +7,8 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/admin/*", "/admin.jsp"})
-public class TheFilter implements Filter {
+@WebFilter(urlPatterns = {"/admin/*"})
+public class AdminFilter implements Filter {
     FilterConfig fc;
 
     @Override
@@ -26,7 +26,7 @@ public class TheFilter implements Filter {
             throws IOException, ServletException {
         String user = (String) ((HttpServletRequest) request).getSession().getAttribute("role");
         if(user == null){
-            request.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+            request.getServletContext().getRequestDispatcher("/auth").forward(request, response);
         }
         if (user.equalsIgnoreCase("admin")) {
             chain.doFilter(request, response);

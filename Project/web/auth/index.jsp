@@ -5,7 +5,7 @@
 </head>
 <body>
 Login
-<form action="${pageContext.request.contextPath}/user" method="post">
+<form action="${pageContext.request.contextPath}/auth" method="post">
   Name: <label>
   <input type="text" name="name"/>
 </label>
